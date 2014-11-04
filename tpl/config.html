@@ -1,0 +1,97 @@
+<!--// HEADER -->
+<include target="./_header.html" />
+
+<!--// BODY -->
+<div cond="$XE_VALIDATOR_MESSAGE && $XE_VALIDATOR_ID == 'modules/steamlogin/tpl/config/1'" class="message {$XE_VALIDATOR_MESSAGE_TYPE}">
+	<p>{$XE_VALIDATOR_MESSAGE}</p>
+</div>
+
+<section class="section">
+	<h1>
+		{$lang->cmd_steamlogin_config}
+		<a href="#descConfig" class="x_icon-question-sign" data-toggle="#descConfig">{$lang->help}</a>
+	</h1>
+	<p id="descConfig" class="x_alert x_alert-info" hidden="hidden">{$lang->about_steamlogin_config}</p>
+	<form method="post" class="x_form-horizontal" action="./">
+		<input type="hidden" name="module" value="steamlogin">
+		<input type="hidden" name="act" value="procSteamloginAdminInsertConfig">
+		<input type="hidden" name="xe_validator_id" value="modules/steamlogin/tpl/config/1" />
+
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->steamlogin_id}</div>
+			<div class="x_controls">
+				<div class="x_input">
+					<input type="text" step="any" value="{$module_config->clientid}" name="clientid" size="7">
+				</div>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->steamlogin_domain}</div>
+			<div class="x_controls">
+				<div class="x_input">
+					<input type="text" step="any" value="{$module_config->def_url}" name="def_url" size="7">
+				</div>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->steamlogin_oauthdomain}</div>
+			<div class="x_controls">
+				<div class="x_input">
+					<input type="text" onclick="this.focus();this.select()" step="any" value="{$module_config->def_url . 'index.php?act=procSteamloginOAuth'}" style="width:90%" readonly="readonly">
+				</div>
+			</div>
+		</div>
+		<div class="x_control-group">
+			<div class="x_control-label">{$lang->steamlogin_howtoadd}</div>
+			<div class="x_controls">
+				<div class="x_input">
+					<input type="text" onclick="this.focus();this.select()" step="any" value="{$module_config->def_url . 'index.php?module=steamlogin&act=dispSteamloginOAuth'}" style="width:90%" readonly="readonly">
+				</div>
+			</div>
+		</div>
+		<div class="x_clearfix btnArea">
+			<div class="x_pull-right">
+				<button class="x_btn x_btn-primary" type="submit">{$lang->cmd_registration}</button>
+			</div>
+		</div>
+		<!--// div class="x_row-fluid">
+			<h3>아이콘이나 소스코드를 클릭하여 소스코드를 복사하여 사용하세요.</h3>
+			<div class="x_span6 x_carousel" style="margin-left:0px;">
+				<div style="width:95%;">
+					<img class="x_pull-left" src="img/login_250x250_g.PNG" style="width:30%;margin-left:0px;">
+					<img class="x_pull-right" src="img/login_250x250_w.PNG" style="width:30%;margin-right:0px;">
+				</div>
+			</div>
+			<div class="x_span6 x_carousel" style="margin-left:0px;">
+				<textarea style="width:95%;"></textarea>
+			</div>
+		</div>
+		<div class="x_row-fluid">
+			<div class="x_span6" style="margin-left:0px;">
+				<p><img src="img/login_725x250_g.PNG" style="width:95%;height:160px"></p>
+				<p><img src="img/login_725x250_w.PNG" style="width:95%;height:160px"></p>
+			</div>
+			<div class="x_span6" style="margin-left:0px;">
+				<p><img src="img/logout_725x250_g.PNG" style="width:95%;height:160px"></p>
+				<p><img src="img/logout_725x250_w.PNG" style="width:95%;height:160px"></p>
+			</div>
+		</div>
+		<div class="x_row-fluid">
+			<div class=" x_span3">
+				<h3>스타일5</h3>
+			</div>
+			<div class=" x_span3">
+				<h3>스타일6</h3>
+			</div>
+			<div class=" x_span3">
+				<h3>스타일7</h3>
+			</div>
+			<div class=" x_span3">
+				<h3>스타일8</h3>
+			</div>
+		</div-->
+	</form>
+</section>
+
+<!--// FOOTER -->
+<include target="./_footer.html" />

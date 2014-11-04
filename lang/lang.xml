@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lang>
+	<item name="steamlogin">
+		<value xml:lang="en"><![CDATA[XE Steam Login]]></value>
+		<value xml:lang="ko"><![CDATA[XE Steam Login]]></value>
+	</item>
+	<item name="about_steamlogin">
+		<value xml:lang="en"><![CDATA[]]></value>
+		<value xml:lang="ko"><![CDATA[스팀 계정으로 로그인할수 있게 해주는 모듈입니다.]]></value>
+	</item>
+    <item name="cmd_steamlogin_config">
+        <value xml:lang="en"><![CDATA[]]></value>
+        <value xml:lang="ko"><![CDATA[스팀 로그인 API 설정]]></value>
+    </item>
+    <item name="steamlogin_id">
+        <value xml:lang="en"><![CDATA[Steam Web API Key]]></value>
+        <value xml:lang="ko"><![CDATA[Steam Web API Key]]></value>
+    </item>
+    <item name="steamlogin_domain">
+        <value xml:lang="en"><![CDATA[Domain]]></value>
+        <value xml:lang="ko"><![CDATA[도메인]]></value>
+    </item>
+    <item name="about_steamlogin_config">
+        <value xml:lang="en"><![CDATA[]]></value>
+        <value xml:lang="ko"><![CDATA[http://steamcommunity.com/dev/registerkey에서 Web API 키를 발급받으세요.]]></value>
+    </item>
+    <item name="steamlogin_howtoadd">
+        <value xml:lang="en"><![CDATA[]]></value>
+        <value xml:lang="ko"><![CDATA[로그인 주소]]></value>
+    </item>
+</lang>

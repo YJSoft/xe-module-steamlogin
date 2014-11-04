@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<grants />
+	<permissions />
+	<actions>
+		<action name="dispSteamloginAdminConfig" type="view" menu_name="steamlogin" menu_index="true" admin_index="true" />
+		<action name="dispSteamloginOAuth" type="view"/>
+		<action name="procSteamloginOAuth" type="controller" />
+        <action name="procSteamloginAdminInsertConfig" type="controller" standalone="false" />
+	</actions>
+	<menus>
+		<menu name="steamlogin" type="all">
+			<title xml:lang="en">XE Steam Login</title>
+			<title xml:lang="ko">XE Steam Login</title>
+			<title xml:lang="jp">XE Steam Login</title>
+		</menu>
+	</menus>
+</module>

@@ -1,0 +1,9 @@
+<query id="insertSteamloginMember" action="insert">
+	<tables>
+		<table name="steamlogin_member" />
+	</tables>
+	<columns>
+		<column name="srl" var="srl" notnull="notnull" />
+		<column name="enc_id" var="enc_id" notnull="notnull" />
+	</columns>
+</query>
